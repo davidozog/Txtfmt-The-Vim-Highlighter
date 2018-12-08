@@ -2591,9 +2591,9 @@ call s:Def_map('o', ']tea', '<Plug>TxtfmtFwdTillAnyEndTok', ":<C-U>call <SID>Jum
 " inserting the token, then hitting <Esc>.
 " TODO - This one is redundant to the \vi one - use the latter instead for
 " notational consistency?
-call s:Def_map('n', '<C-\><C-\>', '<Plug>TxtfmtInsertTok_n',
-			\":<C-U>call <SID>Insert_tokstr('', 'i', 0, 0)<CR>"
-			\.":call <SID>Adjust_cursor()<CR>")
+"""call s:Def_map('n', '<C-\><C-\>', '<Plug>TxtfmtInsertTok_n',
+"""			\":<C-U>call <SID>Insert_tokstr('', 'i', 0, 0)<CR>"
+"""			\.":call <SID>Adjust_cursor()<CR>")
 " Start in normal / End in insert
 call s:Def_map('n', '<LocalLeader>i', '<Plug>TxtfmtInsertTok_i',
 			\":<C-U>call <SID>Insert_tokstr('', 'i', 0, 0)<CR>"
@@ -2613,9 +2613,9 @@ call s:Def_map('n', '<LocalLeader>o', '<Plug>TxtfmtInsertTok_o',
 call s:Def_map('n', '<LocalLeader>O', '<Plug>TxtfmtInsertTok_O',
 			\":<C-U>call <SID>Insert_tokstr('', 'O', 0, 0)<CR>"
 			\.":call <SID>Adjust_cursor()<CR>")
-call s:Def_map('n', '<LocalLeader>s', '<Plug>TxtfmtInsertTok_s',
-			\":<C-U>call <SID>Insert_tokstr('', 's', 0, 0)<CR>"
-			\.":call <SID>Adjust_cursor()<CR>")
+"""call s:Def_map('n', '<LocalLeader>s', '<Plug>TxtfmtInsertTok_s',
+"""			\":<C-U>call <SID>Insert_tokstr('', 's', 0, 0)<CR>"
+"""			\.":call <SID>Adjust_cursor()<CR>")
 " Start in normal / End in normal
 call s:Def_map('n', '<LocalLeader>vi', '<Plug>TxtfmtInsertTok_vi',
 			\":<C-U>call <SID>Insert_tokstr('', 'i', 0, 1)<CR>"
@@ -2643,9 +2643,9 @@ call s:Def_map('n', '<LocalLeader>vs', '<Plug>TxtfmtInsertTok_vs',
 " NOTE: Default is to use something that wouldn't be typed as text for the
 " insert mode map. User may wish to remap this one to a Function key or
 " something else entirely. I find <C-\><C-\> very easy to type...
-call s:Def_map('i', '<C-\><C-\>', '<Plug>TxtfmtInsertTok_i',
-			\"<C-R>=<SID>Insert_tokstr('', 'i', 0, 0)<CR>"
-			\."<C-R>=<SID>Adjust_cursor()<CR>")
+"""call s:Def_map('i', '<C-\><C-\>', '<Plug>TxtfmtInsertTok_i',
+"""			\"<C-R>=<SID>Insert_tokstr('', 'i', 0, 0)<CR>"
+"""			\."<C-R>=<SID>Adjust_cursor()<CR>")
 " >>>
 " normal mode get token info mapping <<<
 call s:Def_map('n', '<LocalLeader>ga', '<Plug>TxtfmtGetTokInfo',
